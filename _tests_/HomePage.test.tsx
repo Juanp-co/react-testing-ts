@@ -44,7 +44,7 @@ describe('Home Page - Rendering', () => {
     })
 
     describe('Behavior',() => {
-        it('should click on Show Text button and find new text',async () => {
+        it('should click on Show Text button and find new text', async () => {
             render(<Home/>);
             expect(screen.queryByText('This is the text!')).not.toBeInTheDocument();
             const showTextButton = screen.getByRole('button', { name: 'Show Text' });
